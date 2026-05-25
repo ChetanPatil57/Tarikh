@@ -989,17 +989,17 @@
 
         if (response.ok) {
           form.innerHTML = `
-            <div style="text-align:center;padding:32px 16px;">
-              <div style="font-size:40px;margin-bottom:16px;">🙏</div>
-              <h3 style="font-family:'Fraunces',Georgia,serif;font-size:24px;color:var(--text-1);margin-bottom:12px;">You're on the list, ${name}!</h3>
-              <p style="font-family:'DM Sans',sans-serif;font-size:15px;color:var(--text-2);line-height:1.6;margin-bottom:20px;">We'll WhatsApp you on <strong>${whatsapp}</strong> shortly with everything you need to get started.</p>
-              <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text-3);">While you wait — save this number on WhatsApp so you recognise us when we reach out.</p>
-              <div style="margin-top:20px;display:inline-block;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:12px 24px;">
-                <p style="font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text-3);margin:0 0 4px;">Save this number</p>
-                <p style="font-family:'Fraunces',Georgia,serif;font-size:20px;color:var(--text-1);margin:0;letter-spacing:1px;">+1 415 523 8886</p>
-              </div>
-            </div>
-          `;
+  <div style="text-align:center;padding:48px 24px;max-width:480px;margin:0 auto;">
+    <div style="width:64px;height:64px;border-radius:50%;background:rgba(200,130,14,0.12);border:1px solid rgba(200,130,14,0.25);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:28px;">⚖️</div>
+    <h3 style="font-family:'Fraunces',Georgia,serif;font-size:30px;font-weight:700;color:var(--text-1);margin-bottom:8px;letter-spacing:-0.5px;">You're all set, ${name}.</h3>
+    <p style="font-family:'Fraunces',Georgia,serif;font-size:18px;font-weight:400;font-style:italic;color:#C8820E;margin-bottom:24px;">Tarikh is on it.</p>
+    <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:24px;margin-bottom:24px;">
+      <p style="font-family:'DM Sans',sans-serif;font-size:15px;color:var(--text-2);line-height:1.75;margin-bottom:12px;">Check your WhatsApp in a few minutes — Tarikh will be there before your next chai gets cold.</p>
+      <p style="font-family:'DM Sans',sans-serif;font-size:15px;color:var(--text-2);line-height:1.75;margin:0;">Until then, enjoy your chai without worrying about what's on tomorrow's cause list.</p>
+    </div>
+    <p style="font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text-3);letter-spacing:0.2px;">You've got one less thing to forget. 🙏</p>
+  </div>
+`;
         } else {
           throw new Error('Submission failed');
         }
